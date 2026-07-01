@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    // tsup's declaration build injects the (TS 6-deprecated) `baseUrl`; allow it
+    // until tsup stops setting it / TS 7 removes it.
+    "ignoreDeprecations": "6.0",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+
+    /* Node library */
+    "lib": ["ES2022"],
+    "types": ["node"],
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": ["eslint.config.mjs", "**/*.ts", "**/*.cjs", "**/*.mjs", "**/*.js"],
+  "exclude": ["node_modules", "dist"]
+}

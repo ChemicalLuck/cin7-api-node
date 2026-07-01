@@ -1,0 +1,69 @@
+{
+  "name": "@chemicalluck/cin7-api-node",
+  "version": "1.0.0",
+  "description": "Cin7 Omni API Node.js Client",
+  "keywords": [
+    "cin7",
+    "cin7-omni",
+    "api",
+    "client",
+    "node",
+    "nodejs",
+    "typescript"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Joe Tebbett <j.tebbett@outlook.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ChemicalLuck/cin7-api-node",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ChemicalLuck/cin7-api-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChemicalLuck/cin7-api-node/issues"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format:all": "prettier --write .",
+    "format:staged": "prettier --write $(git diff --staged --name-only --diff-filter d | xargs)",
+    "lint": "eslint src",
+    "prepare": "node .husky/install.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": {
+        "require": "./dist/index.d.cts",
+        "default": "./dist/index.d.ts"
+      },
+      "default": {
+        "require": "./dist/index.cjs",
+        "import": "./dist/index.js"
+      }
+    }
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^26.0.1",
+    "eslint": "^9.39.4",
+    "husky": "^9.1.7",
+    "prettier": "^3.9.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.1",
+    "vitest": "^4.1.9"
+  }
+}
