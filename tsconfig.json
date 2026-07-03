@@ -24,6 +24,12 @@
     "module": "ESNext",
     "moduleResolution": "Bundler"
   },
-  "include": ["eslint.config.mjs", "**/*.ts", "**/*.cjs", "**/*.mjs", "**/*.js"],
+  "include": [
+    "eslint.config.mjs",
+    "**/*.ts",
+    "**/*.cjs",
+    "**/*.mjs",
+    "**/*.js"
+  ],
   "exclude": ["node_modules", "dist"]
 }

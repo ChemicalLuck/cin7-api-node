@@ -4,7 +4,7 @@ Guidance for working in this repository.
 
 ## What this is
 
-`@chemicalluck/cin7-api-node` — a fully typed, **zero-runtime-dependency** Node.js
+`@chemicalluck/cin7-omni-api-node` — a fully typed, **zero-runtime-dependency** Node.js
 client for the [Cin7 Omni API](https://api.cin7.com/api). Published as dual
 ESM + CJS with bundled `.d.ts` declarations.
 
@@ -31,7 +31,7 @@ A single HTTP client is shared by thin, per-resource classes:
   and pagination. This is the only file that talks to `fetch`.
 - **`src/api/resource.ts`** — `Cin7Resource`, the abstract base. Builds the
   endpoint URL from `resource` + `apiVersion` and exposes typed `_get/_post/
-  _put/_delete/_paginate` helpers that delegate to the client.
+_put/_delete/_paginate` helpers that delegate to the client.
 - **`src/api/resources/*.ts`** — one class per Cin7 endpoint. Each pins the model
   types onto the base helpers. See `src/api/resources/CLAUDE.md`.
 - **`src/models/`** — errors, the `RequestMethod` enum, `Cin7ListParams` /

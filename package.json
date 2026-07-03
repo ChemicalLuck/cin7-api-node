@@ -1,5 +1,5 @@
 {
-  "name": "@chemicalluck/cin7-api-node",
+  "name": "@chemicalluck/cin7-omni-api-node",
   "version": "1.0.0",
   "description": "Cin7 Omni API Node.js Client",
   "keywords": [
@@ -16,13 +16,13 @@
   },
   "author": "Joe Tebbett <j.tebbett@outlook.com>",
   "license": "MIT",
-  "homepage": "https://github.com/ChemicalLuck/cin7-api-node",
+  "homepage": "https://github.com/ChemicalLuck/cin7-omni-api-node",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ChemicalLuck/cin7-api-node.git"
+    "url": "git+ssh://git@github.com/ChemicalLuck/cin7-omni-api-node.git"
   },
   "bugs": {
-    "url": "https://github.com/ChemicalLuck/cin7-api-node/issues"
+    "url": "https://github.com/ChemicalLuck/cin7-omni-api-node/issues"
   },
   "scripts": {
     "build": "tsup",

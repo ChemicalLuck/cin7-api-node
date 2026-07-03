@@ -67,7 +67,12 @@ describe("adjustments", () =>
   run([
     ["get", () => cin7.adjustments.get(1), "get", `${B}/v1/Adjustments/1`],
     ["list", () => cin7.adjustments.list(), "paginate", `${B}/v1/Adjustments`],
-    ["create", () => cin7.adjustments.create([]), "post", `${B}/v1/Adjustments`],
+    [
+      "create",
+      () => cin7.adjustments.create([]),
+      "post",
+      `${B}/v1/Adjustments`
+    ],
     ["update", () => cin7.adjustments.update([]), "put", `${B}/v1/Adjustments`]
   ]));
 
@@ -138,7 +143,12 @@ describe("creditNotes", () =>
   run([
     ["get", () => cin7.creditNotes.get(1), "get", `${B}/v1/CreditNotes/1`],
     ["list", () => cin7.creditNotes.list(), "paginate", `${B}/v1/CreditNotes`],
-    ["create", () => cin7.creditNotes.create([]), "post", `${B}/v1/CreditNotes`],
+    [
+      "create",
+      () => cin7.creditNotes.create([]),
+      "post",
+      `${B}/v1/CreditNotes`
+    ],
     ["update", () => cin7.creditNotes.update([]), "put", `${B}/v1/CreditNotes`]
   ]));
 
@@ -235,7 +245,12 @@ describe("productionJobs", () =>
 
 describe("productOptions", () =>
   run([
-    ["get", () => cin7.productOptions.get(1), "get", `${B}/v1/ProductOptions/1`],
+    [
+      "get",
+      () => cin7.productOptions.get(1),
+      "get",
+      `${B}/v1/ProductOptions/1`
+    ],
     [
       "list",
       () => cin7.productOptions.list(),
@@ -266,7 +281,12 @@ describe("products", () =>
 
 describe("purchaseOrders", () =>
   run([
-    ["get", () => cin7.purchaseOrders.get(1), "get", `${B}/v1/PurchaseOrders/1`],
+    [
+      "get",
+      () => cin7.purchaseOrders.get(1),
+      "get",
+      `${B}/v1/PurchaseOrders/1`
+    ],
     [
       "list",
       () => cin7.purchaseOrders.list(),
@@ -299,7 +319,12 @@ describe("salesOrders", () =>
   run([
     ["get", () => cin7.salesOrders.get(1), "get", `${B}/v1/SalesOrders/1`],
     ["list", () => cin7.salesOrders.list(), "paginate", `${B}/v1/SalesOrders`],
-    ["create", () => cin7.salesOrders.create([]), "post", `${B}/v1/SalesOrders`],
+    [
+      "create",
+      () => cin7.salesOrders.create([]),
+      "post",
+      `${B}/v1/SalesOrders`
+    ],
     ["update", () => cin7.salesOrders.update([]), "put", `${B}/v1/SalesOrders`]
   ]));
 

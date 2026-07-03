@@ -33,10 +33,7 @@ class Cin7Client {
     return new Promise<void>((resolve) => setTimeout(resolve, ms));
   }
 
-  private _constructURL(
-    url: string,
-    query?: Record<string, string>
-  ): string {
+  private _constructURL(url: string, query?: Record<string, string>): string {
     const urlWithParams = new URL(url);
     if (query) {
       Object.entries(query).forEach(([key, value]) => {

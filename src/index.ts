@@ -55,8 +55,9 @@ class Cin7 {
     this.cartons = new resources.CartonsResource(this.client);
     this.contacts = new resources.ContactsResource(this.client);
     this.creditNotes = new resources.CreditNotesResource(this.client);
-    this.paymentFeesAndPayouts =
-      new resources.PaymentFeesAndPayoutsResource(this.client);
+    this.paymentFeesAndPayouts = new resources.PaymentFeesAndPayoutsResource(
+      this.client
+    );
     this.payments = new resources.PaymentsResource(this.client);
     this.productCategories = new resources.ProductCategoriesResource(
       this.client
@@ -68,8 +69,9 @@ class Cin7 {
     this.purchaseOrders = new resources.PurchaseOrdersResource(this.client);
     this.quotes = new resources.QuotesResource(this.client);
     this.salesOrders = new resources.SalesOrdersResource(this.client);
-    this.salesOrdersWithCartons =
-      new resources.SalesOrdersWithCartonsResource(this.client);
+    this.salesOrdersWithCartons = new resources.SalesOrdersWithCartonsResource(
+      this.client
+    );
     this.serialNumbers = new resources.SerialNumbersResource(this.client);
     this.sizeRanges = new resources.SizeRangesResource(this.client);
     this.stock = new resources.StockResource(this.client);
